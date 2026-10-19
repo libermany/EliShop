@@ -36,7 +36,7 @@
   header {
     background: linear-gradient(135deg, var(--teal), #0a6a7a);
     color: #fff;
-    padding: 32px 16px;
+    padding: 16px;
   }
   .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
   .brand { display: flex; align-items: center; gap: 20px; }
@@ -51,7 +51,10 @@
     width: 100%; padding: 14px 18px; font-size: 1rem;
     border: 0; border-radius: 10px; font-family: inherit;
   }
-  main { padding: 32px 0 48px; }
+  html, body { height: 100%; }
+  body { display: flex; flex-direction: column; min-height: 100vh; }
+  main { flex: 1; width: 100%; padding: 0; }
+  #genesys-support-center { width: 100%; min-height: 100%; }
   h2 { margin: 0 0 16px; font-size: 1.3rem; }
   .grid {
     display: grid; gap: 16px;
@@ -90,7 +93,7 @@
   </div>
 </header>
 
-<main class="wrap">
+<main>
   <div id="genesys-support-center"></div>
 </main>
 
