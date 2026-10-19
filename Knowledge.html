@@ -87,76 +87,29 @@
         <p class="sub">פורטל בסיס ידע – Genesys Cloud CX בעברית</p>
       </div>
     </div>
-    <div class="search">
-      <input id="q" type="search" placeholder="חיפוש במאמרים…" aria-label="חיפוש">
-    </div>
   </div>
 </header>
 
 <main class="wrap">
-  <h2>נושאים</h2>
-  <div class="grid" id="topics">
-    <section class="card">
-      <h3>תחילת עבודה</h3>
-      <p>הקמה ראשונית של הארגון והגדרות בסיס.</p>
-      <ul>
-        <li><a href="https://help.genesys.cloud/" target="_blank" rel="noopener">מרכז העזרה של Genesys Cloud</a></li>
-        <li>הגדרת משתמשים, תפקידים ואגפים</li>
-      </ul>
-    </section>
-    <section class="card">
-      <h3>טלפוניה</h3>
-      <p>BYOC, SIP, אתרים, מספרים ו-Edge.</p>
-      <ul>
-        <li>הגדרת Trunk ו-Site</li>
-        <li>ניהול מספרי DID</li>
-      </ul>
-    </section>
-    <section class="card">
-      <h3>ניתוב ותורים</h3>
-      <p>תורים, כישורים, ניתוב מבוסס יכולות ו-Architect.</p>
-      <ul>
-        <li>יצירת תור והגדרת חברים</li>
-        <li>זרימות Inbound Call</li>
-      </ul>
-    </section>
-    <section class="card">
-      <h3>ערוצים דיגיטליים</h3>
-      <p>צ'אט, מסרים, אימייל ו-Web Messaging.</p>
-      <ul>
-        <li>הטמעת Messenger באתר</li>
-        <li>ניתוב אימייל</li>
-      </ul>
-    </section>
-    <section class="card">
-      <h3>דוחות ואנליטיקה</h3>
-      <p>לוחות מחוונים, תצוגות ביצועים ו-WFM.</p>
-      <ul>
-        <li>ביצועי תורים וסוכנים</li>
-        <li>איכות והערכות</li>
-      </ul>
-    </section>
-    <section class="card">
-      <h3>אינטגרציות ו-API</h3>
-      <p>OAuth, Data Actions ו-Platform API.</p>
-      <ul>
-        <li><a href="https://developer.genesys.cloud/" target="_blank" rel="noopener">Genesys Cloud Developer Center</a></li>
-        <li>Client Credentials</li>
-      </ul>
-    </section>
-  </div>
+  <div id="genesys-support-center"></div>
 </main>
 
 <footer>
   <div class="wrap">© אלי_שופ · בסיס ידע Genesys Cloud CX בעברית</div>
 </footer>
 
-<script>
-  document.getElementById('q').addEventListener('input', function (e) {
-    var t = e.target.value.trim().toLowerCase();
-    document.querySelectorAll('#topics .card').forEach(function (c) {
-      c.classList.toggle('hidden', t && c.textContent.toLowerCase().indexOf(t) === -1);
-    });
+<script type="text/javascript" charset="utf-8">
+  (function (g, e, n, es, ys) {
+    g['_genesysJs'] = e;
+    g[e] = g[e] || function () {
+      (g[e].q = g[e].q || []).push(arguments)
+    };
+    g[e].t = 1 * new Date();
+    g[e].c = es;
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.euw2.pure.cloud/genesys-bootstrap/genesys.min.js', {
+    environment: 'prod-euw2',
+    deploymentId: '74e24148-c7e7-4d9c-9514-4fc6575bb7d8'
   });
 </script>
 </body>
