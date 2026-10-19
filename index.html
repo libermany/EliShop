@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>אלי_שופ</title>
+<link rel="icon" href="assets/logo.jpg">
+<style>
+  :root {
+    --bg: #f5f8fa;
+    --card: #ffffff;
+    --text: #1d2b36;
+    --muted: #5d6f7d;
+    --brand: #ff4f1f;
+    --brand-dark: #d93d12;
+    --teal: #0d8ea3;
+    --border: #dbe4ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121a20;
+      --card: #1b252d;
+      --text: #e8eef2;
+      --muted: #9fb1bd;
+      --border: #2c3a44;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Arial, "Noto Sans Hebrew", sans-serif;
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, var(--teal), #0a6a7a);
+    color: #fff;
+    padding: 32px 16px;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+  .brand { display: flex; align-items: center; gap: 20px; }
+  .logo {
+    width: 96px; height: 96px; border-radius: 50%;
+    object-fit: cover; border: 3px solid #fff; flex: none;
+  }
+  h1 { margin: 0; font-size: 2rem; }
+  .sub { margin: 4px 0 0; opacity: .9; }
+  .search { margin-top: 24px; }
+  .search input {
+    width: 100%; padding: 14px 18px; font-size: 1rem;
+    border: 0; border-radius: 10px; font-family: inherit;
+  }
+  main { padding: 32px 0 48px; }
+  h2 { margin: 0 0 16px; font-size: 1.3rem; }
+  .grid {
+    display: grid; gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px;
+  }
+  .card h3 { margin: 0 0 8px; color: var(--brand); font-size: 1.1rem; }
+  .card p { margin: 0 0 12px; color: var(--muted); font-size: .95rem; }
+  .card ul { margin: 0; padding: 0 20px 0 0; }
+  .card a { color: var(--teal); text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+  .hidden { display: none; }
+  footer {
+    border-top: 1px solid var(--border); padding: 20px 0;
+    color: var(--muted); font-size: .9rem; text-align: center;
+  }
+  @media (max-width: 520px) {
+    .logo { width: 72px; height: 72px; }
+    h1 { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <img class="logo" src="assets/logo.jpg" alt="לוגו אלי שופ">
+      <div>
+        <h1>אלי_שופ</h1>
+        <p class="sub">פורטל בסיס ידע – Genesys Cloud CX בעברית</p>
+      </div>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="חיפוש במאמרים…" aria-label="חיפוש">
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2>נושאים</h2>
+  <div class="grid" id="topics">
+    <section class="card">
+      <h3>תחילת עבודה</h3>
+      <p>הקמה ראשונית של הארגון והגדרות בסיס.</p>
+      <ul>
+        <li><a href="https://help.genesys.cloud/" target="_blank" rel="noopener">מרכז העזרה של Genesys Cloud</a></li>
+        <li>הגדרת משתמשים, תפקידים ואגפים</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h3>טלפוניה</h3>
+      <p>BYOC, SIP, אתרים, מספרים ו-Edge.</p>
+      <ul>
+        <li>הגדרת Trunk ו-Site</li>
+        <li>ניהול מספרי DID</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h3>ניתוב ותורים</h3>
+      <p>תורים, כישורים, ניתוב מבוסס יכולות ו-Architect.</p>
+      <ul>
+        <li>יצירת תור והגדרת חברים</li>
+        <li>זרימות Inbound Call</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h3>ערוצים דיגיטליים</h3>
+      <p>צ'אט, מסרים, אימייל ו-Web Messaging.</p>
+      <ul>
+        <li>הטמעת Messenger באתר</li>
+        <li>ניתוב אימייל</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h3>דוחות ואנליטיקה</h3>
+      <p>לוחות מחוונים, תצוגות ביצועים ו-WFM.</p>
+      <ul>
+        <li>ביצועי תורים וסוכנים</li>
+        <li>איכות והערכות</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h3>אינטגרציות ו-API</h3>
+      <p>OAuth, Data Actions ו-Platform API.</p>
+      <ul>
+        <li><a href="https://developer.genesys.cloud/" target="_blank" rel="noopener">Genesys Cloud Developer Center</a></li>
+        <li>Client Credentials</li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© אלי_שופ · בסיס ידע Genesys Cloud CX בעברית</div>
+</footer>
+
+<script>
+  document.getElementById('q').addEventListener('input', function (e) {
+    var t = e.target.value.trim().toLowerCase();
+    document.querySelectorAll('#topics .card').forEach(function (c) {
+      c.classList.toggle('hidden', t && c.textContent.toLowerCase().indexOf(t) === -1);
+    });
+  });
+</script>
+</body>
+</html>
