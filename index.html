@@ -3,12 +3,229 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>אלי_שופ</title>
-<meta http-equiv="refresh" content="0; url=Knowledge.html">
-<link rel="canonical" href="Knowledge.html">
-<script>location.replace("Knowledge.html");</script>
+<title>אלי_שופ | EliShop</title>
+<meta name="description" content="אלי_שופ – פתרונות Genesys Cloud CX בעברית">
+<link rel="icon" href="assets/logo.jpg">
+<style>
+  :root {
+    --bg: #f5f8fa;
+    --card: #ffffff;
+    --text: #1d2b36;
+    --muted: #5d6f7d;
+    --brand: #ff4f1f;
+    --teal: #0d8ea3;
+    --teal-dark: #0a6a7a;
+    --border: #dbe4ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121a20;
+      --card: #1b252d;
+      --text: #e8eef2;
+      --muted: #9fb1bd;
+      --border: #2c3a44;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Arial, "Noto Sans Hebrew", sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+  header {
+    background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+    color: #fff;
+    padding: 28px 0;
+  }
+  .top { display: flex; align-items: center; gap: 20px; }
+  .logo {
+    width: 96px; height: 96px; border-radius: 50%;
+    object-fit: cover; border: 3px solid #fff; flex: none;
+  }
+  .titles { flex: 1; }
+  h1 { margin: 0; font-size: 2rem; line-height: 1.2; }
+  .tagline { margin: 4px 0 0; opacity: .92; }
+  #langBtn {
+    flex: none; cursor: pointer; font: inherit; font-weight: 600;
+    background: #fff; color: var(--teal-dark);
+    border: 0; border-radius: 999px; padding: 8px 18px;
+  }
+  #langBtn:hover { background: #e8f6f9; }
+  #langBtn:focus-visible, a:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
+  section { padding: 36px 0 0; }
+  h2 { margin: 0 0 12px; font-size: 1.4rem; }
+  .about p { margin: 0; max-width: 70ch; }
+  .grid {
+    display: grid; gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px;
+  }
+  .card h3 { margin: 0 0 8px; color: var(--brand); font-size: 1.15rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  .links { margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 10px 24px; }
+  a { color: var(--teal); text-decoration: none; font-weight: 600; }
+  a:hover { text-decoration: underline; }
+  .note { margin-top: 14px; color: var(--muted); font-size: .9rem; }
+  footer {
+    margin-top: 48px; border-top: 1px solid var(--border);
+    padding: 20px 0; color: var(--muted); font-size: .9rem; text-align: center;
+  }
+  @media (max-width: 560px) {
+    .top { flex-wrap: wrap; }
+    .logo { width: 72px; height: 72px; }
+    h1 { font-size: 1.5rem; }
+    #langBtn { margin-inline-start: auto; }
+  }
+</style>
 </head>
 <body>
-<p><a href="Knowledge.html">מעבר לפורטל אלי_שופ</a></p>
+<header>
+  <div class="wrap top">
+    <img class="logo" src="assets/logo.jpg" alt="" data-i18n-alt="logoAlt">
+    <div class="titles">
+      <h1 data-i18n="brand">אלי_שופ</h1>
+      <p class="tagline" data-i18n="tagline"></p>
+    </div>
+    <button id="langBtn" type="button" aria-label="Language / שפה"></button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="about" aria-labelledby="aboutTitle">
+    <h2 id="aboutTitle" data-i18n="aboutTitle"></h2>
+    <p data-i18n="aboutText"></p>
+  </section>
+
+  <section aria-labelledby="pkgTitle">
+    <h2 id="pkgTitle" data-i18n="pkgTitle"></h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Genesys Cloud CX 1</h3>
+        <p data-i18n="cx1"></p>
+      </article>
+      <article class="card">
+        <h3>Genesys Cloud CX 2</h3>
+        <p data-i18n="cx2"></p>
+      </article>
+      <article class="card">
+        <h3>Genesys Cloud CX 3</h3>
+        <p data-i18n="cx3"></p>
+      </article>
+      <article class="card">
+        <h3>Genesys Cloud CX 4</h3>
+        <p data-i18n="cx4"></p>
+      </article>
+    </div>
+    <p class="note" data-i18n="pkgNote"></p>
+  </section>
+
+  <section aria-labelledby="docsTitle">
+    <h2 id="docsTitle" data-i18n="docsTitle"></h2>
+    <ul class="links">
+      <li><a href="https://help.genesys.cloud/articles/overview-of-genesys-cloud/" target="_blank" rel="noopener" data-i18n="linkOverview"></a></li>
+      <li><a href="https://www.genesys.com/en-sg/core-pricing-matrix" target="_blank" rel="noopener" data-i18n="linkPricing"></a></li>
+      <li><a href="https://help.genesys.cloud/" target="_blank" rel="noopener" data-i18n="linkHelp"></a></li>
+      <li><a href="https://developer.genesys.cloud/" target="_blank" rel="noopener" data-i18n="linkDev"></a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap" data-i18n="footer"></div>
+</footer>
+
+<script>
+(function () {
+  var T = {
+    he: {
+      dir: 'rtl', btn: 'English',
+      brand: 'אלי_שופ',
+      logoAlt: 'לוגו אלי_שופ',
+      tagline: 'פתרונות Genesys Cloud CX בעברית',
+      aboutTitle: 'אודות אלי_שופ',
+      aboutText: 'אלי_שופ הוא פורטל ייעוץ ומכירות לפתרונות Genesys Cloud CX. אנחנו עוזרים לארגונים לבחור, להטמיע ולהפיק ערך ממרכז קשר ענן: טלפוניה, ערוצים דיגיטליים, ניתוב, דוחות ובינה מלאכותית. יש לכם שאלה? פתחו את הצ׳אט ואלי ישמח לעזור.',
+      pkgTitle: 'חבילות Genesys Cloud CX',
+      cx1: 'חבילת הבסיס, ממוקדת בקול. מתאימה למרכזי קשר שעיקר הפעילות בהם טלפונית.',
+      cx2: 'מוסיפה ערוצים דיגיטליים ויכולות מבוססות בינה מלאכותית לניהול מעורבות לקוחות.',
+      cx3: 'מוסיפה ניהול כוח עבודה (WEM) ודקות תמלול קולי.',
+      cx4: 'החבילה המתקדמת לארגונים שרוצים יותר חוויית בינה מלאכותית, כולל Agent Copilot, Journey Management ואסימוני AI Experience.',
+      pkgNote: 'כל חבילה בנויה על קודמתה. התכולה המדויקת, התמחור ותוספות נקבעים על ידי Genesys, ולכן מומלץ לעיין בטבלת ההשוואה העדכנית או לפנות אלינו להצעה.',
+      docsTitle: 'תיעוד וקישורים של Genesys',
+      linkOverview: 'סקירה של Genesys Cloud',
+      linkPricing: 'טבלת השוואת חבילות ותמחור',
+      linkHelp: 'מרכז העזרה של Genesys Cloud',
+      linkDev: 'Genesys Cloud Developer Center',
+      footer: '© אלי_שופ · Genesys Cloud CX בעברית'
+    },
+    en: {
+      dir: 'ltr', btn: 'עברית',
+      brand: 'EliShop',
+      logoAlt: 'EliShop logo',
+      tagline: 'Genesys Cloud CX solutions in Hebrew',
+      aboutTitle: 'About EliShop',
+      aboutText: 'EliShop is a consulting and sales portal for Genesys Cloud CX solutions. We help organizations choose, deploy and get value from a cloud contact center: telephony, digital channels, routing, analytics and AI. Have a question? Open the chat and Eli will be happy to help.',
+      pkgTitle: 'Genesys Cloud CX packages',
+      cx1: 'The entry package, focused on voice. Suited to contact centers that are mainly telephony-based.',
+      cx2: 'Adds digital channels and AI-powered capabilities for managing customer engagement.',
+      cx3: 'Adds workforce engagement management (WEM) and voice transcription minutes.',
+      cx4: 'The advanced package for organizations that want more AI experience, including Agent Copilot, Journey Management and AI Experience tokens.',
+      pkgNote: 'Each package builds on the one below it. Exact inclusions, pricing and add-ons are set by Genesys, so check the current comparison matrix or contact us for a quote.',
+      docsTitle: 'Genesys documentation and links',
+      linkOverview: 'Overview of Genesys Cloud',
+      linkPricing: 'Package comparison and pricing matrix',
+      linkHelp: 'Genesys Cloud Help Center',
+      linkDev: 'Genesys Cloud Developer Center',
+      footer: '© EliShop · Genesys Cloud CX in Hebrew'
+    }
+  };
+
+  var html = document.documentElement;
+  var btn = document.getElementById('langBtn');
+
+  function apply(lang) {
+    var t = T[lang];
+    html.lang = lang;
+    html.dir = t.dir;
+    document.title = lang === 'he' ? 'אלי_שופ | EliShop' : 'EliShop | אלי_שופ';
+    btn.textContent = t.btn;
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      el.textContent = t[el.getAttribute('data-i18n')];
+    });
+    document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+      el.alt = t[el.getAttribute('data-i18n-alt')];
+    });
+    try { localStorage.setItem('elishop-lang', lang); } catch (e) {}
+  }
+
+  var saved = 'he';
+  try { saved = localStorage.getItem('elishop-lang') === 'en' ? 'en' : 'he'; } catch (e) {}
+  apply(saved);
+
+  btn.addEventListener('click', function () {
+    apply(html.lang === 'he' ? 'en' : 'he');
+  });
+})();
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  (function (g, e, n, es, ys) {
+    g['_genesysJs'] = e;
+    g[e] = g[e] || function () {
+      (g[e].q = g[e].q || []).push(arguments)
+    };
+    g[e].t = 1 * new Date();
+    g[e].c = es;
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.euw2.pure.cloud/genesys-bootstrap/genesys.min.js', {
+    environment: 'prod-euw2',
+    deploymentId: '3bd3d302-f522-4fce-92f3-fa0382e9d5e9'
+  });
+</script>
 </body>
 </html>
